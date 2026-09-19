@@ -72,7 +72,7 @@ function getEmptyMessage() {
     return "沒有未完成的待辦事項。";
   }
   if (currentFilter === "completed") {
-    return "還沒有已完成的待辦事項。";
+    return "目前沒有已完成的事項，項目只是被目前的篩選條件隱藏，並未刪除。";
   }
   return "還沒有任何待辦事項，新增一個吧!";
 }
