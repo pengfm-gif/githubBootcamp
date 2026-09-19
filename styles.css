@@ -233,11 +233,36 @@ button:hover {
 }
 
 .todo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-top: 24px;
   padding-top: 18px;
   color: var(--text-secondary);
   border-top: 1px solid var(--border);
   font-size: 0.9rem;
+}
+
+.clear-completed-button {
+  padding: 6px 8px;
+  color: var(--danger);
+  background: transparent;
+  border: 1px solid var(--danger);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.clear-completed-button:hover:not(:disabled) {
+  color: var(--accent-text);
+  background: var(--danger);
+}
+
+.clear-completed-button:disabled {
+  color: var(--text-secondary);
+  border-color: var(--border);
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .sr-only {
